@@ -29,6 +29,8 @@ function loopGif(gifElement) {
 
 setInterval(() => loopGif(gif), 6100); 
 
+
+
 const hideAllButtonsButton = document.getElementById('yes-btn');
 const allButtons = document.querySelectorAll('button');
 

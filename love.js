@@ -29,15 +29,11 @@ function loopGif(gifElement) {
 
 setInterval(() => loopGif(gif), 6100); 
 
+const hideAllButtonsButton = document.getElementById('yes-btn');
+const allButtons = document.querySelectorAll('button');
 
-
-// Находим все кнопки на странице
-const buttons = document.querySelectorAll('button');
-
-// Проходимся по всем кнопкам и добавляем обработчики событий
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Скрываем все кнопки при клике на любую из них
-        buttons.forEach(btn => btn.style.display = 'none');
+hideAllButtonsButton.addEventListener('click', function() {
+    allButtons.forEach(function(button) {
+        button.style.display = 'none';
     });
 });
